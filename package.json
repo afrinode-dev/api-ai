@@ -1,0 +1,17 @@
+{
+  "name": "gemini-scraper-api",
+  "version": "1.0.0",
+  "description": "API de scraping réel pour Gemini",
+  "main": "api.js",
+  "scripts": {
+    "dev": "node api.js",
+    "start": "node api.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0",
+    "puppeteer-core": "^21.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

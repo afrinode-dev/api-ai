@@ -1,0 +1,24 @@
+{
+  "functions": {
+    "api.js": {
+      "maxDuration": 60,
+      "memory": 1024
+    }
+  },
+  "builds": [
+    {
+      "src": "api.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/gemini",
+      "dest": "/api.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api.html"
+    }
+  ]
+}
